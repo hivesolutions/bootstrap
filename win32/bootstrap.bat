@@ -31,4 +31,7 @@ git clone git@github.com:hivesolutions/colony.git colony
 git clone git@github.com:hivesolutions/colony_plugins.git colony_plugins
 git clone git@github.com:hivesolutions/colony_config.git colony_config
 git clone git@github.com:hivesolutions/omni.git omni
+
+:: cloning the ui external libraries
 git clone git@github.com:hivesolutions/uxf.git uxf
+git clone git@github.com:hivesolutions/uxf_bin.git uxf_bin
