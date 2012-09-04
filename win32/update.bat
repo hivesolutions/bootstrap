@@ -51,6 +51,10 @@ cd ..
 cd hive_blog && git pull && git submodule foreach git pull
 cd ..
 
+:: cloning the misc projects
+cd dns_registers && git pull && git submodule foreach git pull
+cd ..
+
 :: cloning the viriatum projects
 cd viriatum && git pull && git submodule foreach git pull
 cd ..
