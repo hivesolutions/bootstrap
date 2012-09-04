@@ -140,7 +140,7 @@ def download():
         file = open(base, "wb")
         try: file.write(contents)
         finally: file.close
- 
+
 if __name__ == "__main__":
     if len(sys.argv) < 2: exit(0)
     command = sys.argv[1]
