@@ -23,6 +23,9 @@
 :: __copyright__ = Copyright (c) 2008-2012 Hive Solutions Lda.
 :: __license__   = GNU General Public License (GPL), Version 3
 
+:: turns off the echo
+@echo off
+
 :: prints an information message
 echo Cloning the hive repositories ...
 
@@ -35,3 +38,10 @@ git clone git@github.com:hivesolutions/omni.git omni
 :: cloning the ui external libraries
 git clone git@github.com:hivesolutions/uxf.git uxf
 git clone git@github.com:hivesolutions/uxf_bin.git uxf_bin
+
+:: cloning the varius extra plugins
+git clone git@github.com:hivesolutions/hive_site.git hive_site
+git clone git@github.com:hivesolutions/hive_blog.git hive_blog
+
+:: cloning the viriatum projects
+git clone git@github.com:hivesolutions/viriatum.git viriatum
