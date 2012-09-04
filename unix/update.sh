@@ -32,8 +32,8 @@ PYTHON_PATH=$USR_BIN_PATH/python
 
 # executes the bootstrap script after
 # the download of the current version
-$PYTHON_PATH ../lib/bootstrap.py --download
-$PYTHON_PATH ../lib/bootstrap.py --update
+$PYTHON_PATH bootstrap.py --download
+$PYTHON_PATH bootstrap.py --update
 
 # exits the process
 exit $?

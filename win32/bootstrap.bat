@@ -28,8 +28,8 @@
 
 :: executes the bootstrap script after
 :: the download of the current version
-python ../lib/bootstrap.py --download
-python ../lib/bootstrap.py --bootstrap
+python bootstrap.py --download
+python bootstrap.py --bootstrap
 
 :: exits the process
 exit /b %ERRORLEVEL%
