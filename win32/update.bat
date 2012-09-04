@@ -30,27 +30,27 @@
 echo Updating the hive repositories ...
 
 :: cloning the various colony repositories
-cd colony && git pull
+cd colony && git pull && git submodule foreach git pull
 cd ..
-cd colony_plugin && git pull
+cd colony_plugins && git pull && git submodule foreach git pull
 cd ..
-cd colony_config && git pull
+cd colony_config && git pull && git submodule foreach git pull
 cd ..
-cd omni && git pull
+cd omni && git pull && git submodule foreach git pull
 cd ..
 
 :: cloning the ui external libraries
-cd uxf && git pull
+cd uxf && git pull && git submodule foreach git pull
 cd ..
-cd uxf_bin && git pull
+cd uxf_bin && git pull && git submodule foreach git pull
 cd ..
 
 :: cloning the varius extra plugins
-cd hive_site && git pull
+cd hive_site && git pull && git submodule foreach git pull
 cd ..
-cd hive_blog && git pull
+cd hive_blog && git pull && git submodule foreach git pull
 cd ..
 
 :: cloning the viriatum projects
-cd viriatum && git pull
+cd viriatum && git pull && git submodule foreach git pull
 cd ..
