@@ -75,16 +75,35 @@ FILES = {
 to be used for retrieval under each of the os names """
 
 REPOSITORIES = [
-    #"colony",
-    #"colony_config",
-    #"colony_plugins",
-    #"hive_blog",
-    #"hive_site",
-    #"omni",
-    #"uxf",
-    #"uxf_bin",
-    #"viriatum"
-    "viriatum"
+    "admin_scripts",
+    "automium",
+    "automium_web",
+    "bootstrap",
+    "cameria",
+    "colony",
+    "colony_config",
+    "colony_plugins",
+    "colony_site",
+    "concordia",
+    "dns_registers",
+    "frontdoor_site",
+    "hive_blog",
+    "hive_nature",
+    "hive_openid",
+    "hive_site",
+    "ifriday",
+    "omni",
+    "omni_chrome",
+    "schettino",
+    "sports_booking",
+    "tiberium",
+    "tiberium_soul",
+    "ustore",
+    "uxf",
+    "uxf_bin",
+    "uxf_demo",
+    "viriatum",
+    "viriatum_handlers"
 ]
 """ The list of repositories that will be used
 for the operation of bootstrap and update  """
