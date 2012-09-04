@@ -38,7 +38,13 @@ __license__ = "GNU General Public License (GPL), Version 3"
 """ The license for the module """
 
 import os
+import sys
+import urllib
 import subprocess
+
+BASE_ADDRESS = "https://github.com/hivesolutions/bootstrap/raw/master/%s"
+""" The base address to the remote location
+of the repository to retrieve the file """
 
 BOOTSTRAP_COMMANDS = [
     "git clone git@github.com:hivesolutions/{0}.git {0}",
@@ -52,6 +58,21 @@ UPDATE_COMMANDS = [
 ]
 """ The list of commands to be used for the update
 operation for a repository """
+
+FILES = {
+    "nt" : [
+        "lib/bootstrap.py",
+        "win32/bootstrap.bat",
+        "win32/update.bat"
+    ],
+    "unix" : [
+        "lib/bootstrap.py",
+        "unix/bootstrap.sh",
+        "unix/update.sh"
+    ]
+}
+""" The map that defines the various sequences of files
+to be used for retrieval under each of the os names """
 
 REPOSITORIES = [
     #"colony",
@@ -100,7 +121,29 @@ def _update(repository):
     # the repository value and then executes it
     for update_command in UPDATE_COMMANDS:
         if not os.path.exists(repository): _bootstrap(repository)
-        command = update_command % repository
+        command = update_command.format(repository)
         subprocess.call(command, shell = True)
 
-update()
+def download():
+    # retrieves the normalized version of the
+    # operative system name (normalized to unix)
+    # then uses it to retrive the list of files
+    os_name = os.name == "nt" and "nt" or "unix"
+    files = FILES.get(os_name, [])
+
+    # iterates over each of the files to retrieve
+    # it from the remote location
+    for _file in files:
+        remote = urllib.urlopen(BASE_ADDRESS % _file)
+        contents = remote.read()
+        base = os.path.basename(_file)
+        file = open(base, "wb")
+        try: file.write(contents)
+        finally: file.close
+ 
+if __name__ == "__main__":
+    if len(sys.argv) < 2: exit(0)
+    command = sys.argv[1]
+    if command == "--bootstrap": bootstrap()
+    if command == "--update": update()
+    if command == "--download": download()
