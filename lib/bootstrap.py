@@ -92,6 +92,7 @@ REPOSITORIES = [
     "hive_openid",
     "hive_site",
     "ifriday",
+    "instashow",
     "omni",
     "omni_chrome",
     "schettino",
