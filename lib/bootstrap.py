@@ -47,7 +47,7 @@ BASE_ADDRESS = "https://github.com/hivesolutions/bootstrap/raw/master/%s"
 of the repository to retrieve the file """
 
 BOOTSTRAP_COMMANDS = [
-    "git clone git@github.com:hivesolutions/{0}.git {0}",
+    "git clone --recursive git@github.com:hivesolutions/{0}.git {0}",
     "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
 ]
 """ The list of commands to be used for the bootstrap
