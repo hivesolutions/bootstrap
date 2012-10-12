@@ -71,9 +71,9 @@ FILES = {
         "win32/update.bat"
     ),
     "unix" : (
-        "lib/bootstrap.py",
-        "unix/bootstrap.sh",
-        "unix/update.sh"
+        ("lib/bootstrap.py", stat.S_IEXEC) ,
+        ("unix/bootstrap.sh", stat.S_IEXEC),
+        ("unix/update.sh", stat.S_IEXEC)
     )
 }
 """ The map that defines the various sequences of files
