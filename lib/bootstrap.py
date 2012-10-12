@@ -135,7 +135,7 @@ command will only be used in the minimal mode """
 def bootstrap(minimal = False):
     # retrieves the proper repositories list according
     # to the value of the minimal flag
-    repositories = minimal and REPOSITORIES or REPOSITORIES_MINIMAL
+    repositories = minimal and REPOSITORIES_MINIMAL or REPOSITORIES 
 
     # iterates over each of the repositories
     # and executes the commands for the bootstrap
@@ -164,7 +164,7 @@ def update(minimal = False):
 
     # retrieves the proper repositories list according
     # to the value of the minimal flag
-    repositories = minimal and REPOSITORIES or REPOSITORIES_MINIMAL
+    repositories = minimal and REPOSITORIES_MINIMAL or REPOSITORIES
 
     # iterates over each of the repositories
     # and executes the commands for the update
