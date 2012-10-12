@@ -42,6 +42,10 @@ import sys
 import urllib
 import subprocess
 
+VERBOSE = True
+""" The default verbosity level to be used during the
+execution of the bootstrap commands """
+
 BASE_ADDRESS = "https://github.com/hivesolutions/bootstrap/raw/master/%s"
 """ The base address to the remote location
 of the repository to retrieve the file """
@@ -155,7 +159,7 @@ def _update(repository):
         command = update_command.format(repository)
         execute(command);
 
-def execute(command, verbose = True):
+def execute(command, verbose = VERBOSE):
     # in case the verbose flag is set prints the command
     # string then creates a new subprocess with the shell
     if verbose: print command
