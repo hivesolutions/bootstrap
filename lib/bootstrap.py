@@ -50,35 +50,35 @@ BASE_ADDRESS = "https://github.com/hivesolutions/bootstrap/raw/master/%s"
 """ The base address to the remote location
 of the repository to retrieve the file """
 
-BOOTSTRAP_COMMANDS = [
+BOOTSTRAP_COMMANDS = (
     "git clone --recursive git@github.com:hivesolutions/{0}.git {0}",
     "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
-]
+)
 """ The list of commands to be used for the bootstrap
 operation for a repository """
 
-UPDATE_COMMANDS = [
-    "cd {0} && git pull && git submodule foreach git pull"
-]
+UPDATE_COMMANDS = (
+    "cd {0} && git pull && git submodule foreach git pull",
+)
 """ The list of commands to be used for the update
 operation for a repository """
 
 FILES = {
-    "nt" : [
+    "nt" : (
         "lib/bootstrap.py",
         "win32/bootstrap.bat",
         "win32/update.bat"
-    ],
-    "unix" : [
+    ),
+    "unix" : (
         "lib/bootstrap.py",
         "unix/bootstrap.sh",
         "unix/update.sh"
-    ]
+    )
 }
 """ The map that defines the various sequences of files
 to be used for retrieval under each of the os names """
 
-REPOSITORIES = [
+REPOSITORIES = (
     "admin_scripts",
     "automium",
     "automium_web",
@@ -119,15 +119,28 @@ REPOSITORIES = [
     "uxf_demo",
     "viriatum",
     "viriatum_handlers"
-]
+)
 """ The list of repositories that will be used
-for the operation of bootstrap and update  """
+for the operation of bootstrap and update """
 
-def bootstrap():
+REPOSITORIES_MINIMAL = (
+    "colony",
+    "colony_config",
+    "colony_plugins"
+)
+""" The list of repositories that will be used
+for the operation of bootstrap and update, these
+command will only be used in the minimal mode """
+
+def bootstrap(minimal = False):
+    # retrieves the proper repositories list according
+    # to the value of the minimal flag
+    repositories = minimal and REPOSITORIES or REPOSITORIES_MINIMAL
+
     # iterates over each of the repositories
     # and executes the commands for the bootstrap
     # operation on each of them
-    for repository in REPOSITORIES:
+    for repository in repositories:
         if not os.path.exists(repository): _bootstrap(repository)
 
 def _bootstrap(repository):
@@ -138,17 +151,25 @@ def _bootstrap(repository):
         command = update_command.format(repository)
         execute(command)
 
-def update():
+def update(minimal = False):
     """
     "Runs" the virtual update operation under
     the current directory for all of the repositories
     registered in the current script.
+
+    @type minimal: bool
+    @param minimal: If the update operation should use
+    the minimal repositories list for operation.
     """
+
+    # retrieves the proper repositories list according
+    # to the value of the minimal flag
+    repositories = minimal and REPOSITORIES or REPOSITORIES_MINIMAL
 
     # iterates over each of the repositories
     # and executes the commands for the update
     # operation on each of them
-    for repository in REPOSITORIES: _update(repository)
+    for repository in repositories: _update(repository)
 
 def _update(repository):
     # iterates over each of the update commands
@@ -188,3 +209,5 @@ if __name__ == "__main__":
     if command == "--bootstrap": bootstrap()
     if command == "--update": update()
     if command == "--download": download()
+    if command == "--update-minimal": update(minimal = True)
+    if command == "--download-minimal": download(minimal = True)
