@@ -113,7 +113,8 @@ def bootstrap():
     # iterates over each of the repositories
     # and executes the commands for the bootstrap
     # operation on each of them
-    for repository in REPOSITORIES: _bootstrap(repository)
+    for repository in REPOSITORIES:
+        if not os.path.exists(repository): _bootstrap(repository)
 
 def _bootstrap(repository):
     # iterates over each of the bootstrap commands
@@ -121,7 +122,7 @@ def _bootstrap(repository):
     # the repository value and then executes it
     for update_command in BOOTSTRAP_COMMANDS:
         command = update_command.format(repository)
-        subprocess.call(command, shell = True)
+        execute(command)
 
 def update():
     """
@@ -142,7 +143,13 @@ def _update(repository):
     for update_command in UPDATE_COMMANDS:
         if not os.path.exists(repository): _bootstrap(repository)
         command = update_command.format(repository)
-        subprocess.call(command, shell = True)
+        execute(command);
+
+def execute(command, verbose = True):
+    # in case the verbose flag is set prints the command
+    # string then creates a new subprocess with the shell
+    if verbose: print command
+    subprocess.call(command, shell = True)
 
 def download():
     # retrieves the normalized version of the
