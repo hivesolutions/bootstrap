@@ -39,6 +39,7 @@ __license__ = "GNU General Public License (GPL), Version 3"
 
 import os
 import sys
+import types
 import urllib
 import subprocess
 
@@ -135,7 +136,7 @@ command will only be used in the minimal mode """
 def bootstrap(minimal = False):
     # retrieves the proper repositories list according
     # to the value of the minimal flag
-    repositories = minimal and REPOSITORIES_MINIMAL or REPOSITORIES 
+    repositories = minimal and REPOSITORIES_MINIMAL or REPOSITORIES
 
     # iterates over each of the repositories
     # and executes the commands for the bootstrap
@@ -196,12 +197,28 @@ def download():
     # iterates over each of the files to retrieve
     # it from the remote location
     for _file in files:
-        remote = urllib.urlopen(BASE_ADDRESS % _file)
+        # checks the file type and in case it's a string
+        # default the file structure into a tuple with the
+        # file (name) and an unset (invalid) mode
+        file_type = type(_file)
+        if file_type in types.StringTypes: _file = (_file, None)
+
+        # unpacks the file structure into the name of the file
+        # and the file (execution) mode
+        name, mode = _file
+
+        # opens the remove location retrieving the data
+        # and then uses it to populate the associated file
+        remote = urllib.urlopen(BASE_ADDRESS % name)
         contents = remote.read()
-        base = os.path.basename(_file)
+        base = os.path.basename(name)
         file = open(base, "wb")
         try: file.write(contents)
         finally: file.close
+
+        # in case the mode value is set must change the
+        # mode for the current file
+        mode and os.chmod(base, mode)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2: exit(0)
