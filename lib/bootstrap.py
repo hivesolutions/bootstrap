@@ -217,9 +217,16 @@ def download():
         try: file.write(contents)
         finally: file.close
 
-        # in case the mode value is set must change the
-        # mode for the current file
-        mode and os.chmod(base, mode)
+        # in case the mode value is not set nothing more
+        # to be done, must continue the loop
+        if not mode: continue
+
+        # retrieves the current state from the file and
+        # uses it to retrieve its current mode and or it
+        # with the requested mode value and set it
+        _stat = os.stat(base)
+        _mode = _stat.st_mode
+        os.chmod(base, _mode | mode)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2: exit(0)
