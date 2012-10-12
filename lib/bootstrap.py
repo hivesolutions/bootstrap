@@ -108,7 +108,7 @@ REPOSITORIES = (
     "omni_chrome",
     "omni_config",
     "omni_layout",
-    "omni_locale",
+    "omni_locales",
     "omni_toolbox",
     "omnix",
     "schettino",
