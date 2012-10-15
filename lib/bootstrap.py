@@ -87,7 +87,6 @@ REPOSITORIES = (
     "barcodes",
     "bootstrap",
     "cameria",
-    "cameria_heroku",
     "colony",
     "colony_config",
     "colony_examples",
