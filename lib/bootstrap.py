@@ -102,6 +102,7 @@ REPOSITORIES = (
     "hive_site",
     "ifriday",
     "instashow",
+    "js_util",
     "medium",
     "omni",
     "omni_chrome",
