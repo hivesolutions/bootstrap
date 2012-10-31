@@ -82,6 +82,7 @@ to be used for retrieval under each of the os names """
 
 REPOSITORIES = (
     "admin_scripts",
+    "apnc",
     "automium",
     "automium_web",
     "barcodes",
