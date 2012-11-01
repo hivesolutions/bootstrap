@@ -88,6 +88,7 @@ REPOSITORIES = (
     "barcodes",
     "bootstrap",
     "cameria",
+    "cameria_ios",
     "colony",
     "colony_config",
     "colony_examples",
