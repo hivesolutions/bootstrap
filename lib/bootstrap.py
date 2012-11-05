@@ -112,6 +112,7 @@ REPOSITORIES = (
     "omni_config",
     "omni_layout",
     "omni_locales",
+    "omni_mobile_set",
     "omni_toolbox",
     "omnix",
     "schettino",
