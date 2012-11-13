@@ -110,6 +110,7 @@ REPOSITORIES = (
     "omni",
     "omni_chrome",
     "omni_config",
+    "omni_dashboard",
     "omni_layout",
     "omni_locales",
     "omni_mobile_set",
