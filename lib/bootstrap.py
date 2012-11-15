@@ -115,6 +115,7 @@ REPOSITORIES = (
     "omni_layout",
     "omni_locales",
     "omni_mobile_set",
+    "omni_timeline",
     "omni_toolbox",
     "omnix",
     "schettino",
