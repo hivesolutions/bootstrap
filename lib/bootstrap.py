@@ -107,6 +107,7 @@ REPOSITORIES = (
     "instashow",
     "jquery",
     "js_util",
+    "libao",
     "medium",
     "omni",
     "omni_chrome",
