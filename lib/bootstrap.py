@@ -119,6 +119,7 @@ REPOSITORIES = (
     "omni_timeline",
     "omni_toolbox",
     "omnix",
+    "pingu_ios",
     "schettino",
     "sports_booking",
     "tiberium",
