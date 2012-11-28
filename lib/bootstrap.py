@@ -123,7 +123,6 @@ REPOSITORIES = (
     "omnix",
     "pingu",
     "pingu_ios",
-    "quorum_ui",
     "schettino",
     "sports_booking",
     "tiberium",
