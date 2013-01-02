@@ -97,6 +97,8 @@ REPOSITORIES = (
     "colony_plugins",
     "colony_site",
     "concordia",
+    "design",
+    "design_archive",
     "dns_registers",
     "flask_quorum",
     "frontdoor_site",
