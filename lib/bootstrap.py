@@ -81,6 +81,7 @@ FILES = {
 to be used for retrieval under each of the os names """
 
 REPOSITORIES = (
+    "admin",
     "admin_scripts",
     "apnc",
     "automium",
