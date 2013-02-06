@@ -90,6 +90,7 @@ REPOSITORIES = (
     "cameo",
     "cameria",
     "cameria_ios",
+    "capsule",
     "colony",
     "colony_config",
     "colony_examples",
