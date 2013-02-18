@@ -111,6 +111,7 @@ REPOSITORIES = (
     "ifriday",
     "instashow",
     "jquery",
+    "jquery_util",
     "js_util",
     "layout",
     "libao",
