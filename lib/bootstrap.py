@@ -112,6 +112,7 @@ REPOSITORIES = (
     "instashow",
     "jquery",
     "jquery_util",
+    "jquery_util_ui",
     "js_util",
     "layout",
     "libao",
