@@ -127,6 +127,7 @@ REPOSITORIES = (
     "omni_timeline",
     "omni_toolbox",
     "omnix",
+    "patches",
     "pingu",
     "pingu_ios",
     "rock_lobby",
