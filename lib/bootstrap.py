@@ -117,6 +117,7 @@ REPOSITORIES = (
     "layout",
     "libao",
     "medium",
+    "mysql_dump",
     "omni",
     "omni_chrome",
     "omni_config",
