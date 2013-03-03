@@ -88,6 +88,7 @@ REPOSITORIES = (
     "automium_web",
     "barcodes",
     "bootstrap",
+    "builds",
     "cameo",
     "cameria",
     "cameria_ios",
