@@ -134,6 +134,7 @@ REPOSITORIES = (
     "pingu_ios",
     "rock_lobby",
     "schettino",
+    "scudum",
     "sports_booking",
     "tiberium",
     "tiberium_soul",
