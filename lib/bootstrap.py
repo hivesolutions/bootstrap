@@ -128,6 +128,7 @@ REPOSITORIES = (
     "omni_mobile_set",
     "omni_timeline",
     "omni_toolbox",
+    "omnia",
     "omnix",
     "patches",
     "pingu",
