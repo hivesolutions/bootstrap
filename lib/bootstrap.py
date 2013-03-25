@@ -133,6 +133,7 @@ REPOSITORIES = (
     "patches",
     "pingu",
     "pingu_ios",
+    "private",
     "rock_lobby",
     "schettino",
     "scudum",
