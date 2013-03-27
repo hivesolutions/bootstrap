@@ -140,6 +140,7 @@ REPOSITORIES = (
     "sports_booking",
     "tiberium",
     "tiberium_soul",
+    "unitr",
     "ustore",
     "uxf",
     "uxf_bin",
