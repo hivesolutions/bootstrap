@@ -146,6 +146,7 @@ REPOSITORIES = (
     "uxf_bin",
     "uxf_demo",
     "viriatum",
+    "viriatum_android",
     "viriatum_handlers"
 )
 """ The list of repositories that will be used
