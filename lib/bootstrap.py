@@ -52,16 +52,27 @@ BASE_ADDRESS = "https://github.com/hivesolutions/bootstrap/raw/master/%s"
 """ The base address to the remote location
 of the repository to retrieve the file """
 
-BOOTSTRAP_COMMANDS = (
-    "git clone --recursive git@github.com:hivesolutions/{0}.git {0}",
-    "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
-)
+BOOTSTRAP_COMMANDS = {
+    "github" : (
+        "git clone --recursive git@github.com:hivesolutions/{0}.git {0}",
+        "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
+    ),
+    "bitbucket" : (
+        "git clone --recursive git@bitbucket.org:hivesolutions/{0}.git {0}",
+        "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
+    )
+}
 """ The list of commands to be used for the bootstrap
 operation for a repository """
 
-UPDATE_COMMANDS = (
-    "cd {0} && git pull && git submodule foreach git pull",
-)
+UPDATE_COMMANDS = {
+    "github" : (
+        "cd {0} && git pull && git submodule foreach git pull",
+    ),
+    "bitbucket" : (
+        "cd {0} && git pull && git submodule foreach git pull",
+    )
+}
 """ The list of commands to be used for the update
 operation for a repository """
 
@@ -80,86 +91,93 @@ FILES = {
 """ The map that defines the various sequences of files
 to be used for retrieval under each of the os names """
 
-REPOSITORIES = (
-    "admin",
-    "admin_scripts",
-    "apnc",
-    "automium",
-    "barcodes",
-    "bootstrap",
-    "builds",
-    "cameo",
-    "cameria",
-    "cameria_ios",
-    "capsule",
-    "colony",
-    "colony_config",
-    "colony_examples",
-    "colony_npapi",
-    "colony_plugins",
-    "colony_site",
-    "concordia",
-    "design",
-    "design_archive",
-    "dns_registers",
-    "flask_quorum",
-    "frontdoor_site",
-    "hive_blog",
-    "hive_nature",
-    "hive_openid",
-    "hive_site",
-    "ifriday",
-    "instashow",
-    "jquery",
-    "jquery_util",
-    "jquery_util_ui",
-    "js_util",
-    "layout",
-    "libao",
-    "mantium",
-    "medium",
-    "mysql_dump",
-    "omni",
-    "omni_chrome",
-    "omni_config",
-    "omni_dashboard",
-    "omni_layout",
-    "omni_locales",
-    "omni_mobile_set",
-    "omni_timeline",
-    "omni_toolbox",
-    "omnia",
-    "omnix",
-    "patches",
-    "pingu",
-    "pingu_ios",
-    "private",
-    "rock_lobby",
-    "schettino",
-    "scudum",
-    "sports_booking",
-    "tiberium",
-    "tiberium_soul",
-    "unitr",
-    "ustore",
-    "uxf",
-    "uxf_bin",
-    "uxf_demo",
-    "viriatum",
-    "viriatum_android",
-    "viriatum_handlers"
-)
-""" The list of repositories that will be used
-for the operation of bootstrap and update """
+REPOSITORIES = {
+    "github" : (
+        "admin",
+        "admin_scripts",
+        "apnc",
+        "automium",
+        "barcodes",
+        "bootstrap",
+        "builds",
+        "cameo",
+        "cameria",
+        "cameria_ios",
+        "capsule",
+        "colony",
+        "colony_config",
+        "colony_examples",
+        "colony_npapi",
+        "colony_plugins",
+        "colony_site",
+        "concordia",
+        "design",
+        "design_archive",
+        "dns_registers",
+        "flask_quorum",
+        "frontdoor_site",
+        "hive_blog",
+        "hive_nature",
+        "hive_openid",
+        "hive_site",
+        "ifriday",
+        "instashow",
+        "jquery",
+        "jquery_util",
+        "jquery_util_ui",
+        "js_util",
+        "layout",
+        "libao",
+        "mantium",
+        "medium",
+        "mysql_dump",
+        "omni",
+        "omni_chrome",
+        "omni_config",
+        "omni_dashboard",
+        "omni_layout",
+        "omni_locales",
+        "omni_mobile_set",
+        "omni_timeline",
+        "omni_toolbox",
+        "omnia",
+        "omnix",
+        "patches",
+        "pingu",
+        "pingu_ios",
+        "private",
+        "rock_lobby",
+        "schettino",
+        "scudum",
+        "sports_booking",
+        "tiberium",
+        "tiberium_soul",
+        "unitr",
+        "ustore",
+        "uxf",
+        "uxf_bin",
+        "uxf_demo",
+        "viriatum",
+        "viriatum_android",
+        "viriatum_handlers"
+    ),
+    "bitbucket" : (
+        "metrium",
+    )
+}
+""" The map of services associated with a list of repositories
+that will be used for the operation of bootstrap and update """
 
-REPOSITORIES_MINIMAL = (
-    "colony",
-    "colony_config",
-    "colony_plugins"
-)
-""" The list of repositories that will be used
-for the operation of bootstrap and update, these
-command will only be used in the minimal mode """
+REPOSITORIES_MINIMAL = {
+    "github" : (
+        "colony",
+        "colony_config",
+        "colony_plugins"
+    )
+}
+""" The map of services associated with a list of repositories
+that will be used for the operation of bootstrap and update, these
+commands will only be used in the minimal mode """
 
 def bootstrap(minimal = False):
     # retrieves the proper repositories list according
@@ -169,15 +187,18 @@ def bootstrap(minimal = False):
     # iterates over each of the repositories
     # and executes the commands for the bootstrap
     # operation on each of them
-    for repository in repositories:
-        if not os.path.exists(repository): _bootstrap(repository)
+    for service, names in repositories.items():
+        for repository in names:
+            exists = os.path.exists(repository)
+            if not exists: _bootstrap(service, repository)
 
-def _bootstrap(repository):
+def _bootstrap(service, repository):
     # iterates over each of the bootstrap commands
     # and creates the "final" command value using
     # the repository value and then executes it
-    for update_command in BOOTSTRAP_COMMANDS:
-        command = update_command.format(repository)
+    bootstrap_commands = BOOTSTRAP_COMMANDS.get(service, ())
+    for bootstrap_command in bootstrap_commands:
+        command = bootstrap_command.format(repository)
         execute(command)
 
 def update(minimal = False):
@@ -198,14 +219,16 @@ def update(minimal = False):
     # iterates over each of the repositories
     # and executes the commands for the update
     # operation on each of them
-    for repository in repositories: _update(repository)
+    for service, names in repositories.items():
+        for repository in names: _update(service, repository)
 
-def _update(repository):
+def _update(service, repository):
     # iterates over each of the update commands
     # and creates the "final" command value using
     # the repository value and then executes it
-    for update_command in UPDATE_COMMANDS:
-        if not os.path.exists(repository): _bootstrap(repository)
+    update_commands = UPDATE_COMMANDS.get(service, ())
+    for update_command in update_commands:
+        if not os.path.exists(repository): _bootstrap(service, repository)
         command = update_command.format(repository)
         execute(command);
 
