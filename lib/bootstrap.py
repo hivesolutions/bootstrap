@@ -127,6 +127,7 @@ REPOSITORIES = {
         "jquery_util_ui",
         "js_util",
         "layout",
+        "layout_demo",
         "libao",
         "mantium",
         "medium",
