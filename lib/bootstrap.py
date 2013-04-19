@@ -111,6 +111,7 @@ REPOSITORIES = {
         "colony_plugins",
         "colony_site",
         "concordia",
+        "config",
         "design",
         "design_archive",
         "dns_registers",
