@@ -116,6 +116,7 @@ REPOSITORIES = {
         "design_archive",
         "dns_registers",
         "flask_quorum",
+        "flickr_exposition",
         "frontdoor_site",
         "hive_blog",
         "hive_nature",
