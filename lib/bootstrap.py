@@ -166,6 +166,7 @@ REPOSITORIES = {
     ),
     "bitbucket" : (
         "metrium",
+        "remotia"
     )
 }
 """ The map of services associated with a list of repositories
