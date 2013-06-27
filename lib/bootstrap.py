@@ -153,6 +153,7 @@ REPOSITORIES = {
         "schettino",
         "scudum",
         "sports_booking",
+        "take_the_bill",
         "tiberium",
         "tiberium_soul",
         "unitr",
