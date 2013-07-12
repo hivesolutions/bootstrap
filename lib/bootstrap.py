@@ -167,6 +167,7 @@ REPOSITORIES = {
     ),
     "bitbucket" : (
         "metrium",
+        "pushi",
         "remotia"
     )
 }
