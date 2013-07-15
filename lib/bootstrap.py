@@ -95,6 +95,7 @@ REPOSITORIES = {
     "github" : (
         "admin",
         "admin_scripts",
+        "appier",
         "apnc",
         "automium",
         "barcodes",
