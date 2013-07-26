@@ -113,6 +113,7 @@ REPOSITORIES = {
         "colony_site",
         "concordia",
         "config",
+        "cronus_config",
         "design",
         "design_archive",
         "dns_registers",
