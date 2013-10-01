@@ -170,6 +170,7 @@ REPOSITORIES = {
     "bitbucket" : (
         "metrium",
         "pushi",
+        "pushi_lib",
         "pushi_example",
         "remotia"
     )
