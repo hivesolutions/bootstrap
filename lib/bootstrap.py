@@ -67,10 +67,10 @@ operation for a repository """
 
 UPDATE_COMMANDS = {
     "github" : (
-        "cd {0} && git pull && git submodule foreach git pull",
+        "cd {0} && git pull && git submodule foreach git checkout master && git submodule foreach git pull",
     ),
     "bitbucket" : (
-        "cd {0} && git pull && git submodule foreach git pull",
+        "cd {0} && git pull && git submodule foreach git checkout master && git submodule foreach git pull",
     )
 }
 """ The list of commands to be used for the update
