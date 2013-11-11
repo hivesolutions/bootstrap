@@ -168,6 +168,7 @@ REPOSITORIES = {
         "viriatum_handlers"
     ),
     "bitbucket" : (
+        "crossline",
         "metrium",
         "netius",
         "pas",
