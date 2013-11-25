@@ -103,6 +103,7 @@ REPOSITORIES = {
         "builds",
         "cameo",
         "cameria",
+        "cameria_android",
         "cameria_ios",
         "capsule",
         "colony",
