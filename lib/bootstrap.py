@@ -138,6 +138,7 @@ REPOSITORIES = {
         "medium",
         "mysql_dump",
         "omni",
+        "omni_api",
         "omni_chrome",
         "omni_config",
         "omni_dashboard",
