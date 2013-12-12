@@ -102,6 +102,7 @@ REPOSITORIES = {
         "bootstrap",
         "builds",
         "cameo",
+        "cameo_android",
         "cameria",
         "cameria_android",
         "cameria_ios",
