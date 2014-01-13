@@ -179,7 +179,8 @@ REPOSITORIES = {
         "pushi_lib",
         "pushi_example",
         "remotia",
-        "webook"
+        "webook",
+        "websites"
     )
 }
 """ The map of services associated with a list of repositories
