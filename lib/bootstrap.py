@@ -112,6 +112,7 @@ REPOSITORIES = {
         "colony_examples",
         "colony_npapi",
         "colony_plugins",
+        "colony_print",
         "colony_site",
         "concordia",
         "config",
