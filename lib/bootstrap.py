@@ -138,6 +138,7 @@ REPOSITORIES = {
         "libao",
         "mantium",
         "medium",
+        "migratore",
         "mysql_dump",
         "omni",
         "omni_api",
