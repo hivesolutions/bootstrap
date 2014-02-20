@@ -176,6 +176,7 @@ REPOSITORIES = {
         "crossline",
         "metrium",
         "netius",
+        "oibiquini",
         "pas",
         "pushi",
         "pushi_lib",
