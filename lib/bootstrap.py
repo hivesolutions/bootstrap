@@ -160,6 +160,7 @@ REPOSITORIES = {
         "rock_lobby",
         "schettino",
         "scudum",
+        "shopify_api",
         "sports_booking",
         "take_the_bill",
         "tiberium",
