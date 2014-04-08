@@ -106,6 +106,7 @@ REPOSITORIES = {
         "cameria",
         "cameria_android",
         "cameria_ios",
+        "campaigner",
         "capsule",
         "colony",
         "colony_config",
