@@ -96,6 +96,7 @@ REPOSITORIES = {
         "admin",
         "admin_scripts",
         "appier",
+        "appier_extras",
         "apnc",
         "automium",
         "barcodes",
