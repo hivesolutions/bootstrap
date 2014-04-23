@@ -143,6 +143,7 @@ REPOSITORIES = {
         "medium",
         "migratore",
         "mysql_dump",
+        "netius",
         "omni",
         "omni_api",
         "omni_chrome",
@@ -180,7 +181,6 @@ REPOSITORIES = {
     "bitbucket" : (
         "crossline",
         "metrium",
-        "netius",
         "oibiquini",
         "pas",
         "pushi",
