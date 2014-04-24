@@ -139,6 +139,7 @@ REPOSITORIES = {
         "layout",
         "layout_demo",
         "libao",
+        "libs",
         "mantium",
         "medium",
         "migratore",
