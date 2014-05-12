@@ -126,6 +126,7 @@ REPOSITORIES = {
         "flask_quorum",
         "flickr_exposition",
         "frontdoor_site",
+        "github_api",
         "hive_blog",
         "hive_nature",
         "hive_openid",
