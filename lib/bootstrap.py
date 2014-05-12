@@ -161,6 +161,7 @@ REPOSITORIES = {
         "pingu",
         "pingu_ios",
         "private",
+        "proyectos",
         "repos",
         "rock_lobby",
         "schettino",
