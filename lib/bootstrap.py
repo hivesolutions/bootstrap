@@ -123,6 +123,7 @@ REPOSITORIES = {
         "design_archive",
         "dns_registers",
         "easypay_api",
+        "facebook_api",
         "flask_quorum",
         "flickr_exposition",
         "frontdoor_site",
