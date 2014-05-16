@@ -174,6 +174,7 @@ REPOSITORIES = {
         "take_the_bill",
         "tiberium",
         "tiberium_soul",
+        "twitter_api",
         "unitr",
         "ustore",
         "uxf",
