@@ -125,6 +125,7 @@ REPOSITORIES = {
         "easypay_api",
         "facebook_api",
         "flask_quorum",
+        "flickr_api",
         "flickr_exposition",
         "frontdoor_site",
         "github_api",
