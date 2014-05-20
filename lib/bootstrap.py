@@ -135,6 +135,7 @@ REPOSITORIES = {
         "hive_openid",
         "hive_site",
         "ifriday",
+        "instagram_api",
         "instashow",
         "jquery",
         "jquery_util",
