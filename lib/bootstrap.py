@@ -192,6 +192,7 @@ REPOSITORIES = {
         "crossline",
         "metrium",
         "oibiquini",
+        "oibiquini_extras",
         "pas",
         "pushi",
         "pushi_lib",
