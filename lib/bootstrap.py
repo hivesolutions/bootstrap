@@ -109,6 +109,7 @@ REPOSITORIES = {
         "cameria_ios",
         "campaigner",
         "capsule",
+        "cloud_print",
         "colony",
         "colony_config",
         "colony_examples",
