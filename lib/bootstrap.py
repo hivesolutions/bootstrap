@@ -151,6 +151,7 @@ REPOSITORIES = {
         "migratore",
         "mysql_dump",
         "netius",
+        "nexmo_api",
         "omni",
         "omni_api",
         "omni_chrome",
