@@ -107,6 +107,7 @@ REPOSITORIES = {
         "cameria",
         "cameria_android",
         "cameria_ios",
+        "camito",
         "campaigner",
         "capsule",
         "cloud_print",
