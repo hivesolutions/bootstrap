@@ -131,6 +131,7 @@ REPOSITORIES = {
         "flickr_exposition",
         "frontdoor_site",
         "github_api",
+        "gonas",
         "google_api",
         "hive_blog",
         "hive_nature",
