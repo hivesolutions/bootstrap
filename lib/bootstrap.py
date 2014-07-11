@@ -186,6 +186,7 @@ REPOSITORIES = {
         "twitter_api",
         "unitr",
         "ustore",
+        "utilis",
         "uxf",
         "uxf_bin",
         "uxf_demo",
