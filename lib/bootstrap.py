@@ -99,6 +99,7 @@ REPOSITORIES = {
         "appier_extras",
         "apnc",
         "automium",
+        "backup",
         "barcodes",
         "bootstrap",
         "builds",
