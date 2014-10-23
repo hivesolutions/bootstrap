@@ -197,6 +197,7 @@ REPOSITORIES = {
     ),
     "bitbucket" : (
         "crossline",
+        "hive_neo",
         "metrium",
         "oibiquini",
         "oibiquini_extras",
