@@ -147,6 +147,7 @@ REPOSITORIES = {
         "js_util",
         "layout",
         "layout_demo",
+        "legacy",
         "libao",
         "libs",
         "live_api",
