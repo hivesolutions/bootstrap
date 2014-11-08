@@ -281,7 +281,7 @@ def _update(service, repository):
 def execute(command, verbose = VERBOSE):
     # in case the verbose flag is set prints the command
     # string then creates a new subprocess with the shell
-    if verbose: print command
+    if verbose: print(command)
     subprocess.call(command, shell = True)
 
 def download():
