@@ -40,7 +40,6 @@ __license__ = "GNU General Public License (GPL), Version 3"
 import os
 import sys
 import stat
-import urllib
 import subprocess
 
 import legacy
