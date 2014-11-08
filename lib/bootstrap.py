@@ -40,9 +40,10 @@ __license__ = "GNU General Public License (GPL), Version 3"
 import os
 import sys
 import stat
-import types
 import urllib
 import subprocess
+
+import legacy
 
 VERBOSE = True
 """ The default verbosity level to be used during the
@@ -298,7 +299,7 @@ def download():
         # default the file structure into a tuple with the
         # file (name) and an unset (invalid) mode
         file_type = type(_file)
-        if file_type in types.StringTypes: _file = (_file, None)
+        if file_type in legacy.STRINGS: _file = (_file, None)
 
         # unpacks the file structure into the name of the file
         # and the file (execution) mode
