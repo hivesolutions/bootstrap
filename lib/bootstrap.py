@@ -47,6 +47,9 @@ import urllib #@UnusedImport
 try: import urllib2
 except ImportError: urllib2 = None
 
+try: import urllib.request
+except ImportError: urllib.request = None
+
 PYTHON_3 = sys.version_info[0] >= 3
 """ Global variable that defines if the current python
 interpreter is at least python 3 compliant, this is used
