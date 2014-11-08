@@ -42,7 +42,15 @@ import sys
 import stat
 import subprocess
 
-import legacy
+import urllib #@UnusedImport
+
+try: import urllib2
+except ImportError: urllib2 = None
+
+PYTHON_3 = sys.version_info[0] >= 3
+""" Global variable that defines if the current python
+interpreter is at least python 3 compliant, this is used
+to take some of the conversion decision for runtime """
 
 VERBOSE = True
 """ The default verbosity level to be used during the
@@ -225,6 +233,13 @@ REPOSITORIES_MINIMAL = {
 that will be used for the operation of bootstrap and update, these
 commands will only be used in the minimal mode """
 
+if PYTHON_3: STRINGS = (str,)
+else: STRINGS = (str, unicode) #@UndefinedVariable
+
+def urlopen(*args, **kwargs):
+    if PYTHON_3: return urllib.request.urlopen(*args, **kwargs)
+    else: return urllib2.urlopen(*args, **kwargs) #@UndefinedVariable
+
 def bootstrap(minimal = False):
     # retrieves the proper repositories list according
     # to the value of the minimal flag
@@ -298,7 +313,7 @@ def download():
         # default the file structure into a tuple with the
         # file (name) and an unset (invalid) mode
         file_type = type(_file)
-        if file_type in legacy.STRINGS: _file = (_file, None)
+        if file_type in STRINGS: _file = (_file, None)
 
         # unpacks the file structure into the name of the file
         # and the file (execution) mode
@@ -306,7 +321,7 @@ def download():
 
         # opens the remove location retrieving the data
         # and then uses it to populate the associated file
-        remote = legacy.urlopen(BASE_ADDRESS % name)
+        remote = urlopen(BASE_ADDRESS % name)
         contents = remote.read()
         base = os.path.basename(name)
         file = open(base, "wb")
