@@ -307,7 +307,7 @@ def download():
 
         # opens the remove location retrieving the data
         # and then uses it to populate the associated file
-        remote = urllib.urlopen(BASE_ADDRESS % name)
+        remote = legacy.urlopen(BASE_ADDRESS % name)
         contents = remote.read()
         base = os.path.basename(name)
         file = open(base, "wb")
