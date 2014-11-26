@@ -186,7 +186,6 @@ REPOSITORIES = {
         "private",
         "proyectos",
         "repos",
-        "rock_lobby",
         "schettino",
         "scudum",
         "shopdesk",
