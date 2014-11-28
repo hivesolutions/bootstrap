@@ -185,6 +185,9 @@ REPOSITORIES = {
         "pingu_ios",
         "private",
         "proyectos",
+        "pushi",
+        "pushi_js",
+        "pushi_example",
         "repos",
         "schettino",
         "scudum",
@@ -213,9 +216,6 @@ REPOSITORIES = {
         "oibiquini",
         "oibiquini_extras",
         "pas",
-        "pushi",
-        "pushi_lib",
-        "pushi_example",
         "remotia",
         "webook",
         "websites"
@@ -293,7 +293,7 @@ def _update(service, repository):
     for update_command in update_commands:
         if not os.path.exists(repository): _bootstrap(service, repository)
         command = update_command.format(repository)
-        execute(command);
+        execute(command)
 
 def execute(command, verbose = VERBOSE):
     # in case the verbose flag is set prints the command
