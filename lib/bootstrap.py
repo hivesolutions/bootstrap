@@ -162,6 +162,7 @@ REPOSITORIES = {
         "libao",
         "libs",
         "live_api",
+        "mariachi",
         "mantium",
         "medium",
         "migratore",
