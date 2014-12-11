@@ -135,6 +135,7 @@ REPOSITORIES = {
         "cronus_config",
         "design",
         "design_archive",
+        "digitalocean_api",
         "dns_registers",
         "easypay_api",
         "facebook_api",
