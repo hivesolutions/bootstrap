@@ -136,6 +136,7 @@ REPOSITORIES = {
         "design",
         "design_archive",
         "digitalocean_api",
+        "digitalriver",
         "dns_registers",
         "easypay_api",
         "facebook_api",
