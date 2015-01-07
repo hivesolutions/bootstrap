@@ -220,6 +220,7 @@ REPOSITORIES = {
         "oibiquini_extras",
         "pas",
         "remotia",
+        "swear",
         "webook",
         "websites"
     )
