@@ -113,6 +113,8 @@ REPOSITORIES = {
         "backup",
         "barcodes",
         "bootstrap",
+        "budy",
+        "budy_api",
         "builds",
         "cameo",
         "cameo_android",
