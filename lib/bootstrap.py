@@ -109,6 +109,7 @@ REPOSITORIES = {
         "appier",
         "appier_extras",
         "apnc",
+        "armor_api",
         "automium",
         "backup",
         "barcodes",
