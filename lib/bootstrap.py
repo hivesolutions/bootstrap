@@ -223,7 +223,6 @@ REPOSITORIES = {
         "metrium",
         "oibiquini",
         "oibiquini_extras",
-        "oioba",
         "pas",
         "remotia",
         "swear",
