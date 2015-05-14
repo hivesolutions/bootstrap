@@ -159,6 +159,7 @@ REPOSITORIES = {
         "ifriday",
         "instagram_api",
         "instashow",
+        "ios_skeleton",
         "jquery",
         "jquery_util",
         "jquery_util_ui",
