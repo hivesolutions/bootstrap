@@ -222,6 +222,7 @@ REPOSITORIES = {
         "crossline",
         "hive_neo",
         "metrium",
+        "myswear",
         "myswear_ios",
         "oibiquini",
         "oibiquini_extras",
