@@ -226,6 +226,7 @@ REPOSITORIES = {
         "myswear_ios",
         "oibiquini",
         "oibiquini_extras",
+        "omni_dashboard_android",
         "pas",
         "remotia",
         "swear",
