@@ -71,6 +71,10 @@ BOOTSTRAP_COMMANDS = {
     "bitbucket" : (
         "git clone --recursive git@bitbucket.org:hivesolutions/{0}.git {0}",
         "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
+    ),
+    "github_myswear" : (
+        "git clone --recursive git@github.com:myswear/{0}.git {0}",
+        "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
     )
 }
 """ The list of commands to be used for the bootstrap
@@ -223,7 +227,6 @@ REPOSITORIES = {
         "crossline",
         "hive_neo",
         "metrium",
-        "myswear",
         "myswear_ios",
         "oibiquini",
         "oibiquini_extras",
@@ -232,6 +235,9 @@ REPOSITORIES = {
         "swear",
         "webook",
         "websites"
+    ),
+    "github_myswear" : (
+        "myswear",
     )
 }
 """ The map of services associated with a list of repositories
