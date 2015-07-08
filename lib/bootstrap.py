@@ -86,6 +86,9 @@ UPDATE_COMMANDS = {
     ),
     "bitbucket" : (
         "cd {0} && git pull && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
+    ),
+    "github_myswear" : (
+        "cd {0} && git pull && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
     )
 }
 """ The list of commands to be used for the update
