@@ -241,6 +241,7 @@ REPOSITORIES = {
     ),
     "github_myswear" : (
         "myswear",
+        "swear"
     )
 }
 """ The map of services associated with a list of repositories
