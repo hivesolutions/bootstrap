@@ -240,6 +240,7 @@ REPOSITORIES = {
     ),
     "github_myswear" : (
         "myswear",
+        "sadapters",
         "swear"
     )
 }
