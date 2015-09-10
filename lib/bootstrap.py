@@ -120,6 +120,8 @@ REPOSITORIES = {
         "armor_registers",
         "automium",
         "backup",
+        "bagger_adapters",
+        "bagger_ios",
         "barcodes",
         "bootstrap",
         "budy",
