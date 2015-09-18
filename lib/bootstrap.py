@@ -143,6 +143,7 @@ REPOSITORIES = {
         "colony_plugins",
         "colony_print",
         "colony_site",
+        "commons_py",
         "concordia",
         "config",
         "cronus_config",
