@@ -65,16 +65,16 @@ of the repository to retrieve the file """
 
 BOOTSTRAP_COMMANDS = {
     "github" : (
-        "git clone --recursive git@github.com:hivesolutions/{0}.git {0}",
-        "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
+        "git clone --recursive git@github.com:hivesolutions/{0}.git {0} {1}",
+        "cd {0} && git submodule init && git submodule update {1} && git submodule foreach git checkout master"
     ),
     "bitbucket" : (
-        "git clone --recursive git@bitbucket.org:hivesolutions/{0}.git {0}",
-        "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
+        "git clone --recursive git@bitbucket.org:hivesolutions/{0}.git {0} {1}",
+        "cd {0} && git submodule init && git submodule update {1} && git submodule foreach git checkout master"
     ),
     "github_myswear" : (
-        "git clone --recursive git@github.com:myswear/{0}.git {0}",
-        "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
+        "git clone --recursive git@github.com:myswear/{0}.git {0} {1}",
+        "cd {0} && git submodule init && git submodule update {1} && git submodule foreach git checkout master"
     )
 }
 """ The list of commands to be used for the bootstrap
@@ -82,13 +82,13 @@ operation for a repository """
 
 UPDATE_COMMANDS = {
     "github" : (
-        "cd {0} && git pull && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
+        "cd {0} && git pull {1} && git submodule init && git submodule update {1} && git submodule foreach git checkout master && git submodule foreach git pull --depth=1",
     ),
     "bitbucket" : (
-        "cd {0} && git pull && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
+        "cd {0} && git pull {1} && git submodule init && git submodule update {1} && git submodule foreach git checkout master && git submodule foreach git pull --depth=1",
     ),
     "github_myswear" : (
-        "cd {0} && git pull && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
+        "cd {0} && git pull {1} && git submodule init && git submodule update {1} && git submodule foreach git checkout master && git submodule foreach git pull --depth=1",
     )
 }
 """ The list of commands to be used for the update
@@ -147,8 +147,8 @@ REPOSITORIES = {
         "concordia",
         "config",
         "cronus_config",
-        "design",
-        "design_archive",
+        ("design", "--depth=1"),
+        ("design_archive", "--depth=1"),
         "digitalocean_api",
         "digitalriver",
         "dns_registers",
@@ -278,16 +278,19 @@ def bootstrap(minimal = False):
     # operation on each of them
     for service, names in repositories.items():
         for repository in names:
+            is_sequence = type(repository)
+            if is_sequence: repository, extra = repository
+            else: extra = ""
             exists = os.path.exists(repository)
-            if not exists: _bootstrap(service, repository)
+            if not exists: _bootstrap(service, repository, extra = extra)
 
-def _bootstrap(service, repository):
+def _bootstrap(service, repository, extra = ""):
     # iterates over each of the bootstrap commands
     # and creates the "final" command value using
     # the repository value and then executes it
     bootstrap_commands = BOOTSTRAP_COMMANDS.get(service, ())
     for bootstrap_command in bootstrap_commands:
-        command = bootstrap_command.format(repository)
+        command = bootstrap_command.format(repository, extra)
         execute(command)
 
 def update(minimal = False):
@@ -309,16 +312,20 @@ def update(minimal = False):
     # and executes the commands for the update
     # operation on each of them
     for service, names in repositories.items():
-        for repository in names: _update(service, repository)
+        for repository in names:
+            is_sequence = type(repository)
+            if is_sequence: repository, extra = repository
+            else: extra = ""
+            _update(service, repository, extra = extra)
 
-def _update(service, repository):
+def _update(service, repository, extra = ""):
     # iterates over each of the update commands
     # and creates the "final" command value using
     # the repository value and then executes it
     update_commands = UPDATE_COMMANDS.get(service, ())
     for update_command in update_commands:
         if not os.path.exists(repository): _bootstrap(service, repository)
-        command = update_command.format(repository)
+        command = update_command.format(repository, extra)
         execute(command)
 
 def execute(command, verbose = VERBOSE):
