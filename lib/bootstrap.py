@@ -278,7 +278,7 @@ def bootstrap(minimal = False):
     # operation on each of them
     for service, names in repositories.items():
         for repository in names:
-            is_sequence = type(repository)
+            is_sequence = type(repository) in (list, tuple)
             if is_sequence: repository, extra = repository
             else: extra = ""
             exists = os.path.exists(repository)
@@ -313,7 +313,7 @@ def update(minimal = False):
     # operation on each of them
     for service, names in repositories.items():
         for repository in names:
-            is_sequence = type(repository)
+            is_sequence = type(repository) in (list, tuple)
             if is_sequence: repository, extra = repository
             else: extra = ""
             _update(service, repository, extra = extra)
