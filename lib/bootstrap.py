@@ -66,15 +66,15 @@ of the repository to retrieve the file """
 BOOTSTRAP_COMMANDS = {
     "github" : (
         "git clone --recursive git@github.com:hivesolutions/{0}.git {0} {1}",
-        "cd {0} && git submodule init && git submodule update --depth=1 && git submodule foreach git checkout master"
+        "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
     ),
     "bitbucket" : (
         "git clone --recursive git@bitbucket.org:hivesolutions/{0}.git {0} {1}",
-        "cd {0} && git submodule init && git submodule update --depth=1 && git submodule foreach git checkout master"
+        "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
     ),
     "github_myswear" : (
         "git clone --recursive git@github.com:myswear/{0}.git {0} {1}",
-        "cd {0} && git submodule init && git submodule update --depth=1 && git submodule foreach git checkout master"
+        "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
     )
 }
 """ The list of commands to be used for the bootstrap
@@ -82,13 +82,13 @@ operation for a repository """
 
 UPDATE_COMMANDS = {
     "github" : (
-        "cd {0} && git pull {1} && git submodule init && git submodule update --depth=1 && git submodule foreach git checkout master && git submodule foreach git pull --depth=1",
+        "cd {0} && git pull {1} && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
     ),
     "bitbucket" : (
-        "cd {0} && git pull {1} && git submodule init && git submodule update --depth=1 && git submodule foreach git checkout master && git submodule foreach git pull --depth=1",
+        "cd {0} && git pull {1} && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
     ),
     "github_myswear" : (
-        "cd {0} && git pull {1} && git submodule init && git submodule update --depth=1 && git submodule foreach git checkout master && git submodule foreach git pull --depth=1",
+        "cd {0} && git pull {1} && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
     )
 }
 """ The list of commands to be used for the update
