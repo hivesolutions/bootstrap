@@ -213,7 +213,6 @@ REPOSITORIES = {
         "scudum",
         "shopdesk",
         "shopify_api",
-        "sports_booking",
         "take_the_bill",
         "tiberium",
         "tiberium_soul",
