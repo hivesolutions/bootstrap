@@ -121,6 +121,7 @@ REPOSITORIES = {
         "automium",
         "backup",
         "bagger_adapters",
+        "bagger_api",
         "bagger_ios",
         "barcodes",
         "bootstrap",
