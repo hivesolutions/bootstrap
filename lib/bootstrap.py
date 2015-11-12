@@ -209,6 +209,7 @@ REPOSITORIES = {
         "pushi",
         "pushi_js",
         "pushi_example",
+        "remotia",
         "repos",
         "schettino",
         "scudum",
@@ -237,7 +238,6 @@ REPOSITORIES = {
         "oibiquini",
         "oibiquini_extras",
         "pas",
-        "remotia",
         "webook",
         "websites"
     ),
