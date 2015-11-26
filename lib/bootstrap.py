@@ -185,6 +185,7 @@ REPOSITORIES = {
         "mariachi",
         "mantium",
         "medium",
+        "microsoft",
         "migratore",
         "mysql_dump",
         "netius",
