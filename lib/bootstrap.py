@@ -148,6 +148,7 @@ REPOSITORIES = {
         "concordia",
         "config",
         "cronus_config",
+        "crossline",
         "design",
         "design_archive",
         "digitalocean_api",
@@ -233,7 +234,6 @@ REPOSITORIES = {
         "viriatum_handlers"
     ),
     "bitbucket" : (
-        "crossline",
         "hive_neo",
         "metrium",
         "myswear_ios",
