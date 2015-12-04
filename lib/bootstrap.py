@@ -245,6 +245,7 @@ REPOSITORIES = {
         "websites"
     ),
     "github_myswear" : (
+        "building",
         "myswear",
         "sadapters",
         "swear"
