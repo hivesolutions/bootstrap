@@ -190,6 +190,7 @@ REPOSITORIES = {
         "medium",
         "microsoft",
         "migratore",
+        "mongo_api_cs",
         "mysql_dump",
         "netius",
         "nexmo_api",
