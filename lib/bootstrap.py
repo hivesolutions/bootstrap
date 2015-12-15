@@ -188,6 +188,7 @@ REPOSITORIES = {
         "mariachi",
         "mantium",
         "medium",
+        "metrium",
         "microsoft",
         "migratore",
         "mongo_api_cs",
@@ -238,7 +239,6 @@ REPOSITORIES = {
     ),
     "bitbucket" : (
         "hive_neo",
-        "metrium",
         "myswear_ios",
         "oibiquini",
         "oibiquini_extras",
