@@ -155,6 +155,7 @@ REPOSITORIES = {
         "digitalriver",
         "dns_registers",
         "docker",
+        "docker_private",
         "easypay_api",
         "facebook_api",
         "farfetch_api",
