@@ -236,7 +236,8 @@ REPOSITORIES = {
         "uxf_demo",
         "viriatum",
         "viriatum_android",
-        "viriatum_handlers"
+        "viriatum_handlers",
+        "zendesk_api"
     ),
     "bitbucket" : (
         "hive_neo",
