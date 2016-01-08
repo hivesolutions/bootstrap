@@ -226,6 +226,7 @@ REPOSITORIES = {
         "take_the_bill",
         "tiberium",
         "tiberium_soul",
+        "tutum_api",
         "twilio_api",
         "twitter_api",
         "unitr",
