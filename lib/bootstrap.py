@@ -186,6 +186,7 @@ REPOSITORIES = {
         "libao",
         "libs",
         "live_api",
+        "mailme",
         "mariachi",
         "mantium",
         "medium",
