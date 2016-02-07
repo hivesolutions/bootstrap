@@ -187,6 +187,7 @@ REPOSITORIES = {
         "libs",
         "live_api",
         "mailme",
+        "mailme_api",
         "mariachi",
         "mantium",
         "medium",
