@@ -253,9 +253,9 @@ REPOSITORIES = {
         "websites"
     ),
     "github_myswear" : (
-        "building",
         "myswear",
         "sadapters",
+        "scripts",
         "swear"
     )
 }
