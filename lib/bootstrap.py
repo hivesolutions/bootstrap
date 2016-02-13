@@ -166,6 +166,7 @@ REPOSITORIES = {
         "github_api",
         "gonas",
         "google_api",
+        "hello_appier",
         "hello_quorum",
         "hive_blog",
         "hive_nature",
