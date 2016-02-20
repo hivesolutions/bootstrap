@@ -226,6 +226,7 @@ REPOSITORIES = {
         "scudum",
         "shopdesk",
         "shopify_api",
+        "stripe_api",
         "take_the_bill",
         "tiberium",
         "tiberium_soul",
