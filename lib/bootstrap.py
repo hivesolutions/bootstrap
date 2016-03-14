@@ -72,8 +72,8 @@ BOOTSTRAP_COMMANDS = {
         "git clone --recursive git@bitbucket.org:hivesolutions/{0}.git {0} {1}",
         "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
     ),
-    "github_myswear" : (
-        "git clone --recursive git@github.com:myswear/{0}.git {0} {1}",
+    "github_ripe" : (
+        "git clone --recursive git@github.com:ripe-tech/{0}.git {0} {1}",
         "cd {0} && git submodule init && git submodule update && git submodule foreach git checkout master"
     )
 }
@@ -87,7 +87,7 @@ UPDATE_COMMANDS = {
     "bitbucket" : (
         "cd {0} && git pull {1} && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
     ),
-    "github_myswear" : (
+    "github_ripe" : (
         "cd {0} && git pull {1} && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
     )
 }
@@ -254,8 +254,8 @@ REPOSITORIES = {
         "webook",
         "websites"
     ),
-    "github_myswear" : (
-        "myswear",
+    "github_ripe" : (
+        "ripe-core",
         "sadapters",
         "scripts",
         "swear"
