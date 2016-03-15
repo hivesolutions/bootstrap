@@ -256,8 +256,8 @@ REPOSITORIES = {
     ),
     "github_ripe" : (
         "ripe-core",
+        "ripe-legacy",
         "sadapters",
-        "scripts",
         "swear"
     )
 }
