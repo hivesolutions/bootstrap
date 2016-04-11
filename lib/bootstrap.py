@@ -156,6 +156,7 @@ REPOSITORIES = {
         "dns_registers",
         "docker",
         "docker_private",
+        "eadapters",
         "easypay_api",
         "facebook_api",
         "farfetch_api",
