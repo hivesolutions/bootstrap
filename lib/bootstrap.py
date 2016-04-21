@@ -258,6 +258,7 @@ REPOSITORIES = {
         "websites"
     ),
     "github_ripe" : (
+        "ripe-building",
         "ripe-core",
         "ripe-legacy",
         "sadapters",
