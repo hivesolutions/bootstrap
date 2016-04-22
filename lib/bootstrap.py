@@ -260,6 +260,7 @@ REPOSITORIES = {
     "github_ripe" : (
         "ripe-building",
         "ripe-core",
+        "ripe-docs",
         "ripe-legacy",
         "sadapters",
         "swear"
