@@ -214,6 +214,7 @@ REPOSITORIES = {
         "omnia",
         "omnix",
         "patches",
+        "paypal_api",
         "pingu",
         "pingu_ios",
         "private",
