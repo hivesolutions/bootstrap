@@ -215,6 +215,7 @@ REPOSITORIES = {
         "omni_toolbox",
         "omnia",
         "omnix",
+        "opbeat_api",
         "patches",
         "paypal_api",
         "pingu",
