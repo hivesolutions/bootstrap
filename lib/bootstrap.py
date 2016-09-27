@@ -217,6 +217,7 @@ REPOSITORIES = {
         "opbeat_api",
         "patches",
         "paypal_api",
+        "pconvert",
         "pingu",
         "pingu_ios",
         "private",
