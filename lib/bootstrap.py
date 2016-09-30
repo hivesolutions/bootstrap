@@ -228,6 +228,7 @@ REPOSITORIES = {
         "remotia",
         "repos",
         "schettino",
+        "sematext_api",
         "scudum",
         "shopdesk",
         "shopify_api",
