@@ -267,6 +267,7 @@ REPOSITORIES = {
         "ripe-core",
         "ripe-legacy",
         "ripe-misc",
+        "ripe-ops",
         "sadapters",
         "swear"
     )
