@@ -263,6 +263,12 @@ REPOSITORIES = {
         "websites"
     ),
     "github_ripe" : (
+        "plugin-base",
+        "plugin-demos",
+        "plugin-farfetch",
+        "plugin-neon",
+        "plugin-karl",
+        "plugin-kirkwood",
         "ripe-building",
         "ripe-core",
         "ripe-legacy",
