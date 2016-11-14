@@ -269,6 +269,7 @@ REPOSITORIES = {
         "plugin-neon",
         "plugin-karl",
         "plugin-kirkwood",
+        "ripe-analytics",
         "ripe-building",
         "ripe-core",
         "ripe-legacy",
