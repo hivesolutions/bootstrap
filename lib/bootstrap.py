@@ -263,6 +263,7 @@ REPOSITORIES = {
         "websites"
     ),
     "github_ripe" : (
+        "gucci-demo",
         "platforme",
         "plugin-base",
         "plugin-demos",
