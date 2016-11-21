@@ -265,7 +265,7 @@ REPOSITORIES = {
         "websites"
     ),
     "github_ripe" : (
-        "carrers",
+        "careers",
         "gucci-demo",
         "platforme",
         "plugin-base",
