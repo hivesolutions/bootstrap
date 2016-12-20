@@ -227,6 +227,7 @@ REPOSITORIES = {
         "pushi_js",
         "pushi_example",
         "rancher_api",
+        "rancher_bot",
         "remotia",
         "repos",
         "schettino",
