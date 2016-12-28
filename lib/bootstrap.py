@@ -424,3 +424,5 @@ if __name__ == "__main__":
     if command == "--download": download()
     if command == "--update-minimal": update(minimal = True)
     if command == "--download-minimal": download(minimal = True)
+else:
+    __path__ = []
