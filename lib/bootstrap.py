@@ -285,6 +285,7 @@ REPOSITORIES = {
         "ripe-ops",
         "ripe-robin",
         "ripe-sap",
+        "ripe-sdk",
         "sadapters",
         "swear"
     )
