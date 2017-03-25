@@ -124,6 +124,7 @@ REPOSITORIES = {
         "bagger_api",
         "bagger_ios",
         "barcodes",
+        "beacon",
         "bootstrap",
         "budy",
         "budy_api",
