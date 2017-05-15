@@ -148,6 +148,7 @@ REPOSITORIES = {
         "commons_py",
         "concordia",
         "config",
+        "contentful_api",
         "cronit",
         "cronus_config",
         "crossline",
