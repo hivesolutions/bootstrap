@@ -138,6 +138,7 @@ REPOSITORIES = {
         "capsule",
         "cloud_print",
         "cobeacon",
+        "cobeacon_android",
         "colony",
         "colony_config",
         "colony_examples",
