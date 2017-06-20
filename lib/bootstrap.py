@@ -239,6 +239,7 @@ REPOSITORIES = {
         "scudum",
         "shopdesk",
         "shopify_api",
+        "slack_api",
         "stacks",
         "story",
         "story_api",
