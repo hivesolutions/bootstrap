@@ -150,7 +150,6 @@ REPOSITORIES = {
         "concordia",
         "config",
         "contentful_api",
-        "cronit",
         "cronus_config",
         "crossline",
         "design",
