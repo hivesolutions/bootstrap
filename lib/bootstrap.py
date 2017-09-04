@@ -352,8 +352,8 @@ def update(minimal = False):
     the current directory for all of the repositories
     registered in the current script.
 
-    @type minimal: bool
-    @param minimal: If the update operation should use
+    :type minimal: bool
+    :param minimal: If the update operation should use
     the minimal repositories list for operation.
     """
 
