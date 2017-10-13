@@ -82,13 +82,13 @@ operation for a repository """
 
 UPDATE_COMMANDS = {
     "github" : (
-        "cd {0} && git pull {1} && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
+        "cd {0} && git pull {1} && git fetch --prune && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
     ),
     "bitbucket" : (
-        "cd {0} && git pull {1} && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
+        "cd {0} && git pull {1} && git fetch --prune && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
     ),
     "github_ripe" : (
-        "cd {0} && git pull {1} && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
+        "cd {0} && git pull {1} && git fetch --prune && git submodule init && git submodule update && git submodule foreach git checkout master && git submodule foreach git pull",
     )
 }
 """ The list of commands to be used for the update
