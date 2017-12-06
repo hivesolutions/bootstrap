@@ -225,6 +225,7 @@ REPOSITORIES = {
         "pconvert",
         "pingu",
         "pingu_ios",
+        "prismisc_api",
         "private",
         "proyectos",
         "pushi",
