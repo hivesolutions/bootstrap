@@ -237,6 +237,7 @@ REPOSITORIES = {
         "rancher_bot",
         "remotia",
         "repos",
+        "repos_api",
         "schettino",
         "sematext_api",
         "scudum",
