@@ -208,6 +208,7 @@ REPOSITORIES = {
         "mysql_dump",
         "netius",
         "nexmo_api",
+        "okex_api",
         "omni",
         "omni_api",
         "omni_chrome",
