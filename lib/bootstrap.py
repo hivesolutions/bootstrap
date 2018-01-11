@@ -154,6 +154,7 @@ REPOSITORIES = {
         "contentful_api",
         "cronus_config",
         "crossline",
+        "cryadapters",
         "crybot",
         "design",
         "design_archive",
