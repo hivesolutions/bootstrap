@@ -1,5 +1,6 @@
 # [Hive Solutions Bootstrap Scripts](http://hive.pt)
-This set of scripts were created in order to simplify the deployment of the various projects that encompass the hive solutions infra-structure.
+
+This set of scripts were created in order to simplify the deployment of the various projects that encompass the Hive Solutions infra-structure.
 
 ## Quick start
 
