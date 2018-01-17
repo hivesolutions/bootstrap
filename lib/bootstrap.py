@@ -178,6 +178,7 @@ REPOSITORIES = {
         "headless",
         "hello_appier",
         "hello_quorum",
+        "hitbtc_api",
         "hive_blog",
         "hive_nature",
         "hive_openid",
