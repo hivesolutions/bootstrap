@@ -124,6 +124,7 @@ REPOSITORIES = {
         "bagger_api",
         "bagger_ios",
         "barcodes",
+        "barcodies",
         "binance_admin",
         "binance_api",
         "bootstrap",
