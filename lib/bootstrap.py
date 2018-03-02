@@ -250,6 +250,7 @@ REPOSITORIES = {
         "shopify_api",
         "slack_api",
         "stacks",
+        "static",
         "story",
         "story_api",
         "stripe_api",
