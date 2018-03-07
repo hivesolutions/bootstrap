@@ -304,10 +304,12 @@ REPOSITORIES = {
         "ripe-legacy",
         "ripe-misc",
         "ripe-ops",
+        "ripe-retail",
         "ripe-robin",
         "ripe-sales",
         "ripe-sap",
         "ripe-sdk",
+        "ripe-static",
         "sadapters",
         "swear"
     )
