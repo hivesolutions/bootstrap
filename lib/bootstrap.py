@@ -113,6 +113,7 @@ REPOSITORIES = {
     "github" : (
         "admin",
         "admin_scripts",
+        "aliyun_api",
         "appier",
         "appier_extras",
         "apnc",
