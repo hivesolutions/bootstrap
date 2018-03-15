@@ -288,6 +288,7 @@ REPOSITORIES = {
         "gucci-demo",
         "platforme",
         "platforme-neo",
+        "plugin-api",
         "plugin-base",
         "plugin-demos",
         "plugin-farfetch",
