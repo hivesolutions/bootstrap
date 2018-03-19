@@ -244,6 +244,7 @@ REPOSITORIES = {
         "remotia",
         "repos",
         "repos_api",
+        "s3_api",
         "schettino",
         "sematext_api",
         "scudum",
