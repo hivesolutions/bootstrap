@@ -220,6 +220,7 @@ REPOSITORIES = {
         "omni_config",
         "omni_dashboard",
         "omni_dashboard_android",
+        "omni_dashboard_vue",
         "omni_layout",
         "omni_locales",
         "omni_mobile_set",
