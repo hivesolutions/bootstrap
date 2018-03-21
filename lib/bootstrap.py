@@ -274,6 +274,7 @@ REPOSITORIES = {
         "viriatum",
         "viriatum_android",
         "viriatum_handlers",
+        "workspaces",
         "zendesk_api"
     ),
     "bitbucket" : (
@@ -315,8 +316,7 @@ REPOSITORIES = {
         "ripe-sdk",
         "ripe-static",
         "sadapters",
-        "swear",
-        "workspaces"
+        "swear"
     )
 }
 """ The map of services associated with a list of repositories
