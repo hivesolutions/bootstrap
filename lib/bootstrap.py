@@ -315,7 +315,8 @@ REPOSITORIES = {
         "ripe-sdk",
         "ripe-static",
         "sadapters",
-        "swear"
+        "swear",
+        "workspaces"
     )
 }
 """ The map of services associated with a list of repositories
