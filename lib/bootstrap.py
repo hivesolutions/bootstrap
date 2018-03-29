@@ -315,6 +315,7 @@ REPOSITORIES = {
         "ripe-sap",
         "ripe-sdk",
         "ripe-static",
+        "ripe-warehouse",
         "sadapters",
         "swear"
     )
