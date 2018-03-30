@@ -289,6 +289,7 @@ REPOSITORIES = {
     "github_ripe" : (
         "careers",
         "gucci-demo",
+        "hacks",
         "platforme",
         "platforme-neo",
         "plugin-api",
