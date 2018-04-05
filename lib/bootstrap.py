@@ -115,6 +115,7 @@ REPOSITORIES = {
         "admin_scripts",
         "aliyun_api",
         "appier",
+        "appier_console",
         "appier_extras",
         "apnc",
         "armor_api",
