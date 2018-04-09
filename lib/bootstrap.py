@@ -307,6 +307,7 @@ REPOSITORIES = {
         "ripe-building",
         "ripe-compose",
         "ripe-core",
+        "ripe-dashboard",
         "ripe-fonts",
         "ripe-legacy",
         "ripe-misc",
