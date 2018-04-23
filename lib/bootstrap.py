@@ -171,6 +171,7 @@ REPOSITORIES = {
         "easypay_api",
         "facebook_api",
         "farfetch_api",
+        "firstie",
         "flask_quorum",
         "flickr_api",
         "flickr_exposition",
