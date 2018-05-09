@@ -301,6 +301,7 @@ REPOSITORIES = {
         "plugin-karl",
         "plugin-kirkwood",
         "plugin-neon",
+        "plugin-redirect",
         "plugin-swear",
         "pulse",
         "ripe-analytics",
