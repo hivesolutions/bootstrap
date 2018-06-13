@@ -275,6 +275,7 @@ REPOSITORIES = {
         "uxf_bin",
         "uxf_demo",
         "uxf_templates",
+        "uxf_webpack",
         "viriatum",
         "viriatum_android",
         "viriatum_handlers",
