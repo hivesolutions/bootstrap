@@ -274,6 +274,7 @@ REPOSITORIES = {
         "uxf",
         "uxf_bin",
         "uxf_demo",
+        "uxf_templates",
         "viriatum",
         "viriatum_android",
         "viriatum_handlers",
