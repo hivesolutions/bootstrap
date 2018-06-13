@@ -169,6 +169,7 @@ REPOSITORIES = {
         "dropbox_api",
         "eadapters",
         "easypay_api",
+        "eslint_config_hive",
         "facebook_api",
         "farfetch_api",
         "firstie",
