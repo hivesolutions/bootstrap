@@ -238,6 +238,7 @@ REPOSITORIES = {
         "pconvert",
         "pingu",
         "pingu_ios",
+        "prettier_config_hive",
         "prismic_api",
         "private",
         "proyectos",
