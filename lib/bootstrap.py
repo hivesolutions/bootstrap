@@ -294,6 +294,7 @@ REPOSITORIES = {
         "websites"
     ),
     "github_ripe" : (
+        "builds-static",
         "careers",
         "gucci-demo",
         "hacks",
