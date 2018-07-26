@@ -330,6 +330,7 @@ REPOSITORIES = {
         "ripe-sheep",
         "ripe-static",
         "ripe-warehouse",
+        "ripe-xl",
         "sadapters",
         "swear"
     )
