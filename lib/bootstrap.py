@@ -205,6 +205,7 @@ REPOSITORIES = {
         "libao",
         "libs",
         "live_api",
+        "logstash_api",
         "loggly_api",
         "mailme",
         "mailme_api",
