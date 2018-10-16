@@ -328,6 +328,7 @@ REPOSITORIES = {
         "ripe-robin",
         "ripe-sales",
         "ripe-sap",
+        "ripe-scripts",
         "ripe-sdk",
         "ripe-static",
         "ripe-warehouse",
