@@ -217,6 +217,7 @@ REPOSITORIES = {
         "migratore",
         "mysql_dump",
         "netius",
+        "netius_extras",
         "nexmo_api",
         "okex_api",
         "omni",
