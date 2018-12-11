@@ -198,6 +198,7 @@ REPOSITORIES = {
         "jquery_util_ui",
         "js_util",
         "kaboom",
+        "kibana_bot",
         "layout",
         "layout_demo",
         "legacy",
