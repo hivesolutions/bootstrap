@@ -313,6 +313,7 @@ REPOSITORIES = {
         "plugin-redirect",
         "plugin-swear",
         "pulse",
+        "reps",
         "ripe-analytics",
         "ripe-api",
         "ripe-building",
