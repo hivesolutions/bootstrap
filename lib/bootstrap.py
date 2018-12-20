@@ -342,7 +342,8 @@ REPOSITORIES = {
         "ripe-warehouse",
         "ripe-xl",
         "sadapters",
-        "swear"
+        "swear",
+        "tech"
     )
 }
 """ The map of services associated with a list of repositories
