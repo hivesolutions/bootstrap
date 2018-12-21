@@ -343,7 +343,8 @@ REPOSITORIES = {
         "ripe-xl",
         "sadapters",
         "swear",
-        "tech"
+        "tech",
+        "tech-website"
     )
 }
 """ The map of services associated with a list of repositories
