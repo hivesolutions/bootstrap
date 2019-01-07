@@ -159,6 +159,7 @@ REPOSITORIES = {
         "crossline",
         "cryadapters",
         "crybot",
+        "cttpie",
         "design",
         "design_archive",
         "digitalocean_api",
