@@ -341,6 +341,8 @@ REPOSITORIES = {
         "ripe-sap",
         "ripe-scripts",
         "ripe-sdk",
+        "ripe-sdk-android",
+        "ripe-sdk-ios",
         "ripe-static",
         "ripe-util",
         "ripe-warehouse",
