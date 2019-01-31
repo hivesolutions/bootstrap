@@ -319,6 +319,7 @@ REPOSITORIES = {
         "reps",
         "ripe-analytics",
         "ripe-api",
+        "ripe-assets",
         "ripe-building",
         "ripe-casper",
         "ripe-compose",
