@@ -333,6 +333,7 @@ REPOSITORIES = {
         "ripe-legacy",
         "ripe-misc",
         "ripe-ops",
+        "ripe-orchestra",
         "ripe-push",
         "ripe-retail",
         "ripe-retail-vendors",
