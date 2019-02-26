@@ -302,6 +302,7 @@ REPOSITORIES = {
         "careers",
         "gucci-demo",
         "hacks",
+        "nordstrom-proxy",
         "platforme",
         "platforme-neo",
         "plugin-api",
