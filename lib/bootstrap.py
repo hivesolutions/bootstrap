@@ -329,6 +329,7 @@ REPOSITORIES = {
         "ripe-core-vendors",
         "ripe-dashboard",
         "ripe-design",
+        "ripe-docs",
         "ripe-fonts",
         "ripe-id",
         "ripe-id-api",
