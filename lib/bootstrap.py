@@ -323,6 +323,7 @@ REPOSITORIES = {
         "ripe-assets",
         "ripe-building",
         "ripe-casper",
+        "ripe-commons",
         "ripe-compose",
         "ripe-copper",
         "ripe-core",
