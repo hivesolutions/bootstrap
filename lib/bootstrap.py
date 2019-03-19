@@ -338,6 +338,7 @@ REPOSITORIES = {
         "ripe-misc",
         "ripe-ops",
         "ripe-orchestra",
+        "ripe-pulse",
         "ripe-push",
         "ripe-retail",
         "ripe-retail-vendors",
