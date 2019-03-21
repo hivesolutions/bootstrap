@@ -350,6 +350,7 @@ REPOSITORIES = {
         "ripe-sdk",
         "ripe-sdk-android",
         "ripe-sdk-ios",
+        "ripe-sheep",
         "ripe-static",
         "ripe-util",
         "ripe-warehouse",
