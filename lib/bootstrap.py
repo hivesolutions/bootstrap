@@ -334,6 +334,7 @@ REPOSITORIES = {
         "ripe-fonts",
         "ripe-id",
         "ripe-id-api",
+        "ripe-id-api-js",
         "ripe-legacy",
         "ripe-misc",
         "ripe-ops",
