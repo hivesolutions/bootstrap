@@ -286,6 +286,7 @@ REPOSITORIES = {
         "viriatum_android",
         "viriatum_handlers",
         "workspaces",
+        "yonius",
         "zendesk_api"
     ),
     "bitbucket" : (
