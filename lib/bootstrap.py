@@ -264,6 +264,7 @@ REPOSITORIES = {
         "slack_api",
         "stacks",
         "static",
+        "stylelint_config_hive",
         "story",
         "story_api",
         "stripe_api",
