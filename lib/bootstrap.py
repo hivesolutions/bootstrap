@@ -327,6 +327,7 @@ REPOSITORIES = {
         "ripe-building",
         "ripe-casper",
         "ripe-commons",
+        "ripe-components-vue",
         "ripe-compose",
         "ripe-copper",
         "ripe-core",
