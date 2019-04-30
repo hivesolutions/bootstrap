@@ -166,6 +166,8 @@ REPOSITORIES = {
         "digitalriver",
         "dns_registers",
         "docker",
+        "docker_api",
+        "docker_bot",
         "docker_private",
         "dropbox_api",
         "eadapters",
