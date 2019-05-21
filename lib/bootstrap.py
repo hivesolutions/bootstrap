@@ -342,6 +342,7 @@ REPOSITORIES = {
         "ripe-id-api",
         "ripe-id-api-js",
         "ripe-legacy",
+        "ripe-maya",
         "ripe-misc",
         "ripe-ops",
         "ripe-orchestra",
