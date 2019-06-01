@@ -351,7 +351,7 @@ REPOSITORIES = {
         "ripe-retail",
         "ripe-retail-vendors",
         "ripe-robin",
-        "ripe-rtcsr",
+        "ripe-csr",
         "ripe-runner",
         "ripe-sales",
         "ripe-sap",
