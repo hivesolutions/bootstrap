@@ -305,6 +305,7 @@ REPOSITORIES = {
     "github_ripe" : (
         "builds-static",
         "careers",
+        "dev-website",
         "gucci-demo",
         "hacks",
         "jobs",
