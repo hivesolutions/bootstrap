@@ -367,6 +367,7 @@ REPOSITORIES = {
         "ripe-tests",
         "ripe-util",
         "ripe-warehouse",
+        "ripe-white",
         "ripe-xl",
         "sadapters",
         "swear",
