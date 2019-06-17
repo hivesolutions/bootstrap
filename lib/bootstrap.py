@@ -361,6 +361,7 @@ REPOSITORIES = {
         "ripe-sdk",
         "ripe-sdk-android",
         "ripe-sdk-ios",
+        "ripe-skeleton-vue",
         "ripe-ssr",
         "ripe-static",
         "ripe-tests",
