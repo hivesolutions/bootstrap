@@ -245,6 +245,7 @@ REPOSITORIES = {
         "pingu",
         "pingu_ios",
         "pluginus",
+        "pluginus_dev",
         "prettier_config_hive",
         "prismic_api",
         "private",
