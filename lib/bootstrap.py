@@ -213,6 +213,7 @@ REPOSITORIES = {
         "logstash_api",
         "mailme",
         "mailme_api",
+        "maracujalia",
         "mariachi",
         "mantium",
         "medium",
