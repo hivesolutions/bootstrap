@@ -368,6 +368,7 @@ REPOSITORIES = {
         "ripe-ssr",
         "ripe-static",
         "ripe-tests",
+        "ripe-uploader",
         "ripe-util",
         "ripe-warehouse",
         "ripe-white",
