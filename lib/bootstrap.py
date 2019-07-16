@@ -181,6 +181,7 @@ REPOSITORIES = {
         "flickr_exposition",
         "frontdoor_site",
         "github_api",
+        "git_bot",
         "gonas",
         "google_api",
         "headless",
