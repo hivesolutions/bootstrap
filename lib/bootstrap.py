@@ -357,6 +357,7 @@ REPOSITORIES = {
         "ripe-rainbow",
         "ripe-retail",
         "ripe-retail-vendors",
+        "ripe-registry",
         "ripe-robin",
         "ripe-runner",
         "ripe-sales",
