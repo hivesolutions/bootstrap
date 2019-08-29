@@ -370,6 +370,7 @@ REPOSITORIES = {
         "ripe-sdk-android",
         "ripe-sdk-ios",
         "ripe-skeleton-vue",
+        "ripe-sputnik-device",
         "ripe-ssr",
         "ripe-static",
         "ripe-tests",
