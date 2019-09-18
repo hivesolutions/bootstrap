@@ -381,6 +381,7 @@ REPOSITORIES = {
         "ripe-white",
         "ripe-xl",
         "sadapters",
+        "simple-proxy",
         "swear",
         "tech",
         "tech-website"
