@@ -372,6 +372,7 @@ REPOSITORIES = {
         "ripe-sdk-ios",
         "ripe-skeleton-vue",
         "ripe-sputnik-device",
+        "ripe-sputnik-manager",
         "ripe-ssr",
         "ripe-static",
         "ripe-tests",
