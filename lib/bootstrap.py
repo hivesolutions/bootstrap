@@ -375,6 +375,7 @@ REPOSITORIES = {
         "ripe-skeleton-vue",
         "ripe-sputnik-device",
         "ripe-sputnik-manager",
+        "ripe-sputnik-ui",
         "ripe-ssr",
         "ripe-static",
         "ripe-tests",
