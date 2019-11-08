@@ -337,6 +337,7 @@ REPOSITORIES = {
         "ripe-building",
         "ripe-casper",
         "ripe-commons",
+        "ripe-commons-js",
         "ripe-commons-pluginus",
         "ripe-components-vue",
         "ripe-compose",
