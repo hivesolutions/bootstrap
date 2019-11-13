@@ -334,6 +334,7 @@ REPOSITORIES = {
         "ripe-api",
         "ripe-api-docs",
         "ripe-assets",
+        "ripe-blender",
         "ripe-building",
         "ripe-casper",
         "ripe-commons",
