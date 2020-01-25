@@ -387,6 +387,7 @@ REPOSITORIES = {
         "ripe-white",
         "ripe-white-admin",
         "ripe-white-admin-ui",
+        "ripe-white-demo",
         "ripe-xl",
         "sadapters",
         "simple-proxy",
