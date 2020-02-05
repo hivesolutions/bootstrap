@@ -341,6 +341,7 @@ REPOSITORIES = {
         "ripe-commons-js",
         "ripe-commons-pluginus",
         "ripe-components-react-native",
+        "ripe-components-react-native-storybook",
         "ripe-components-vue",
         "ripe-compose",
         "ripe-copper",
