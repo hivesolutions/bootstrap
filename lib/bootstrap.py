@@ -389,6 +389,7 @@ REPOSITORIES = {
         "ripe-warehouse",
         "ripe-white",
         "ripe-white-admin",
+        "ripe-white-admin-api-js",
         "ripe-white-admin-ui",
         "ripe-white-demo",
         "ripe-xl",
