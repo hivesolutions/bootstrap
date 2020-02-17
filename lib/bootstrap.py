@@ -360,6 +360,7 @@ REPOSITORIES = {
         "ripe-misc",
         "ripe-ops",
         "ripe-orchestra",
+        "ripe-orchestra-api-js",
         "ripe-orchestra-ui",
         "ripe-pulse",
         "ripe-push",
