@@ -380,6 +380,7 @@ REPOSITORIES = {
         "ripe-skeleton-vue",
         "ripe-sputnik-device",
         "ripe-sputnik-manager",
+        "ripe-sputnik-manager-api-js",
         "ripe-sputnik-ui",
         "ripe-ssr",
         "ripe-static",
