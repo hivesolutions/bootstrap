@@ -355,6 +355,7 @@ REPOSITORIES = {
         "ripe-id",
         "ripe-id-api",
         "ripe-id-api-js",
+        "ripe-id-mobile",
         "ripe-legacy",
         "ripe-maya",
         "ripe-misc",
