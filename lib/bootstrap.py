@@ -314,6 +314,7 @@ REPOSITORIES = {
         "dev-website",
         "gucci-demo",
         "hacks",
+        "hermes-proxy",
         "jobs",
         "nordstrom-proxy",
         "platforme",
