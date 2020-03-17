@@ -381,6 +381,7 @@ REPOSITORIES = {
         "ripe-sdk",
         "ripe-sdk-android",
         "ripe-sdk-ios",
+        "ripe-shopify",
         "ripe-skeleton-vue",
         "ripe-sputnik-device",
         "ripe-sputnik-manager",
