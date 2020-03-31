@@ -364,6 +364,7 @@ REPOSITORIES = {
         "ripe-orchestra",
         "ripe-orchestra-api-js",
         "ripe-orchestra-ui",
+        "ripe-proxy",
         "ripe-pulse",
         "ripe-push",
         "ripe-rainbow",
