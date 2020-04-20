@@ -319,6 +319,7 @@ REPOSITORIES = {
         "nordstrom-proxy",
         "platforme",
         "platforme-neo",
+        "platforme-revived",
         "plugin-api",
         "plugin-base",
         "plugin-demos",
