@@ -331,6 +331,7 @@ REPOSITORIES = {
         "plugin-neon",
         "plugin-redirect",
         "plugin-swear",
+        "project-tools",
         "pulse",
         "releases",
         "reps",
