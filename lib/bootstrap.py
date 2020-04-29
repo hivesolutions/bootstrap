@@ -311,7 +311,9 @@ REPOSITORIES = {
     "github_ripe" : (
         "builds-static",
         "careers",
+        "custom-reports",
         "dev-website",
+        "growth-static",
         "gucci-demo",
         "hacks",
         "hermes-proxy",
