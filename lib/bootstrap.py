@@ -313,6 +313,7 @@ REPOSITORIES = {
         "careers",
         "custom-reports",
         "dev-website",
+        "devops",
         "growth-static",
         "gucci-demo",
         "hacks",
