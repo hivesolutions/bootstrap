@@ -314,6 +314,8 @@ REPOSITORIES = {
         "custom-reports",
         "dev-website",
         "devops",
+        "epir-core",
+        "epir-processor",
         "growth-static",
         "gucci-demo",
         "hacks",
