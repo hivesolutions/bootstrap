@@ -315,6 +315,7 @@ REPOSITORIES = {
         "dev-website",
         "devops",
         "epir-core",
+        "epir-papyrus",
         "epir-processor",
         "growth-static",
         "gucci-demo",
