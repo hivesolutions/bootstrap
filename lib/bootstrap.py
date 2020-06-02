@@ -227,6 +227,7 @@ REPOSITORIES = {
         "netius",
         "netius_extras",
         "nexmo_api",
+        "oakis",
         "okex_api",
         "omni",
         "omni_api",
