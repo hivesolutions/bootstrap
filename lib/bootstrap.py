@@ -319,6 +319,7 @@ REPOSITORIES = {
         "epir-core-api-js",
         "epir-papyrus",
         "epir-processor",
+        "epir-processor-api-js",
         "growth-static",
         "gucci-demo",
         "hacks",
