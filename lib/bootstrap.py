@@ -318,6 +318,7 @@ REPOSITORIES = {
         "epir-core",
         "epir-core-api-js",
         "epir-papyrus",
+        "epir-papyrus-api-js",
         "epir-processor",
         "epir-processor-api-js",
         "growth-static",
