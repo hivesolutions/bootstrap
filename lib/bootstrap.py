@@ -370,6 +370,7 @@ REPOSITORIES = {
         "ripe-id-api",
         "ripe-id-api-js",
         "ripe-id-mobile",
+        "ripe-id-radius",
         "ripe-legacy",
         "ripe-maya",
         "ripe-misc",
