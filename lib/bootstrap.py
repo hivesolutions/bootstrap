@@ -394,6 +394,8 @@ REPOSITORIES = {
         "ripe-scripts",
         "ripe-sdk",
         "ripe-sdk-android",
+        "ripe-sdk-components-react",
+        "ripe-sdk-components-vue",
         "ripe-sdk-ios",
         "ripe-skeleton-vue",
         "ripe-sputnik-device",
