@@ -409,6 +409,7 @@ REPOSITORIES = {
         "ripe-uploader",
         "ripe-util",
         "ripe-warehouse",
+        "ripe-welcome",
         "ripe-white",
         "ripe-white-admin",
         "ripe-white-admin-api-js",
