@@ -382,6 +382,7 @@ REPOSITORIES = {
         "ripe-push",
         "ripe-rainbow",
         "ripe-registry",
+        "ripe-registry-ui",
         "ripe-retail",
         "ripe-retail-vendors",
         "ripe-robin",
