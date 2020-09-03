@@ -327,6 +327,7 @@ REPOSITORIES = {
         "hermes-proxy",
         "jobs",
         "nordstrom-proxy",
+        "pconvert-rust",
         "platforme",
         "platforme-neo",
         "platforme-revived",
