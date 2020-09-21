@@ -247,6 +247,8 @@ REPOSITORIES = {
         "patches",
         "paypal_api",
         "pconvert",
+        "peri-email",
+        "peri-email-api-js",
         "pingu",
         "pingu_ios",
         "pluginus",
