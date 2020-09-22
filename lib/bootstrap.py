@@ -354,6 +354,7 @@ REPOSITORIES = {
         "ripe-blender",
         "ripe-bridge",
         "ripe-building",
+        "ripe-bus-api-js",
         "ripe-casper",
         "ripe-commons",
         "ripe-commons-js",
