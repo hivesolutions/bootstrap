@@ -324,6 +324,7 @@ REPOSITORIES = {
         "growth-static",
         "gucci-demo",
         "hacks",
+        "hermes-config",
         "hermes-proxy",
         "jobs",
         "nordstrom-proxy",
