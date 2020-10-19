@@ -429,7 +429,9 @@ REPOSITORIES = {
         "simple-proxy",
         "swear",
         "tech",
-        "tech-website"
+        "tech-website",
+        "twitch-panel",
+        "twitch-panel-manager"
     )
 }
 """ The map of services associated with a list of repositories
