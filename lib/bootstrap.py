@@ -364,6 +364,8 @@ REPOSITORIES = {
         "ripe-components-react-native-storybook",
         "ripe-components-vue",
         "ripe-compose",
+        "ripe-compose-light",
+        "ripe-compose-light-js",
         "ripe-copper",
         "ripe-core",
         "ripe-core-vendors",
