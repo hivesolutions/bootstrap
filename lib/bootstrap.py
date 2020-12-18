@@ -310,6 +310,8 @@ REPOSITORIES = {
         "websites"
     ),
     "github_ripe" : (
+        "3d",
+        "3db",
         "builds-static",
         "careers",
         "custom-reports",
