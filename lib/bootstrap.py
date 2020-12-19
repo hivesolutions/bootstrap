@@ -420,6 +420,7 @@ REPOSITORIES = {
         "ripe-today",
         "ripe-uploader",
         "ripe-util",
+        "ripe-util-vue",
         "ripe-warehouse",
         "ripe-welcome",
         "ripe-white",
