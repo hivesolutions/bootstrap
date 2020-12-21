@@ -418,6 +418,7 @@ REPOSITORIES = {
         "ripe-static",
         "ripe-tests",
         "ripe-today",
+        "ripe-twitch",
         "ripe-uploader",
         "ripe-util",
         "ripe-util-vue",
