@@ -436,6 +436,7 @@ REPOSITORIES = {
         "swear",
         "tech",
         "tech-website",
+        "tobias-bot",
         "twitch-panel",
         "twitch-panel-manager"
     )
