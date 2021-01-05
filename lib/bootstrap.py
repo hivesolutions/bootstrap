@@ -419,6 +419,7 @@ REPOSITORIES = {
         "ripe-tests",
         "ripe-today",
         "ripe-twitch",
+        "ripe-twitch-api-js",
         "ripe-twitch-ui",
         "ripe-uploader",
         "ripe-util",
