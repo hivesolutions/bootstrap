@@ -312,6 +312,7 @@ REPOSITORIES = {
     "github_ripe" : (
         "3d",
         "3db",
+        "automator-xl",
         "builds-static",
         "careers",
         "custom-reports",
