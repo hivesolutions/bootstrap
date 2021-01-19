@@ -375,6 +375,7 @@ REPOSITORIES = {
         "ripe-csr",
         "ripe-dashboard",
         "ripe-design",
+        "ripe-design-large",
         "ripe-docs",
         "ripe-fonts",
         "ripe-id",
