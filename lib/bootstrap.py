@@ -360,6 +360,7 @@ REPOSITORIES = {
         "ripe-building",
         "ripe-bus-api-js",
         "ripe-casper",
+        "ripe-config",
         "ripe-commons",
         "ripe-commons-js",
         "ripe-commons-pluginus",
